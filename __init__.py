@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
-
 from app.config.router import Router
 
+import os
+
+flask_env = os.getenv('FLASK_ENV', 'development')
+
 app = Flask(__name__)
-#app.config.from_envvar('FLASK_ENV')
+app.config.from_pyfile(f'app/config/environments/{flask_env}.cfg')
 Bootstrap(app)
 mail = Mail(app)
 
