@@ -15,11 +15,12 @@ h4,
 h5,
 h6 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: green;
   font-weight: 700;
 }
 
 .logo{
-  height: 100px;
+  height: 120px;
   overflow: hidden;
 }
 .showcase .showcase-text {
@@ -29,12 +30,6 @@ h6 {
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
-  margin-top: 1rem;
-}
-
-.showcase-img {
-  padding: 2rem;
-  border-radius: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -53,15 +48,15 @@ h6 {
 }
 
 .features-icons .features-icons-item .features-icons-icon {
-  height: 5rem;
+  height: 3rem;
 }
 
 .features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
+  font-size: 3rem;
 }
 
 .features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 
 .testimonials {
