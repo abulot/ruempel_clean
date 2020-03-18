@@ -5,6 +5,7 @@ Jinja2
 MarkupSafe
 Werkzeug
 flask_bootstrap
+flask-fontawesome
 flask-nav
 flask-debug
 flask-wtf

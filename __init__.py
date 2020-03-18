@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, request
 from flask_bootstrap import Bootstrap
+from flask_fontawesome import FontAwesome
 from flask_mail import Mail
 from app.config.router import Router
 
@@ -10,6 +11,7 @@ flask_env = os.getenv('FLASK_ENV', 'development')
 app = Flask(__name__)
 app.config.from_pyfile(f'app/config/environments/{flask_env}.cfg')
 Bootstrap(app)
+fa = FontAwesome(app)
 mail = Mail(app)
 
 @app.route('/', defaults={'path': ''})

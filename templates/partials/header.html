@@ -1,31 +1,30 @@
 <!-- Header -->
-    <nav class="">
-        <div class="row text-center">
-            <div class="col">
-                <a class="navbar-brand" href="/">
-                    <img class="logo" src="/static/ruempel_clean/logo_green.svg">
-                </a>
+<nav class="">
+    <div class="row text-center">
+        <div class="col text-primary">
+            {{ error }}
 
-            </div>
-            <div class="col align-self-center">
-                    {{ error }}
-
-                    <a class="hotlink mx-2" href="#">
-                        <i class="icon-facebook fa-3x fa-fw"></i>
-                    </a>
-                    <a class="hotlink mx-2" href="#">
-                        <i class="icon-twitter fa-3x fa-fw"></i>
-                    </a>
-                    <a class="hotlink mx-2" href="#">
-                        <i class="icon-instagram fa-3x fa-fw"></i>
-                    </a>
-            </div>
-            <div class="col lead align-self-center">
-                <h1 class="text-primary">
-                    <i class="icon-phone mr-2 "></i>
-                    0177-9899100
-                </h1>
-
-            </div>
+            <a class="hotlink mx-2" href="#">
+                <i class="icon-facebook fa-1x fa-fw"></i>
+            </a>
+            <a class="hotlink mx-2" href="#">
+                <i class="icon-twitter fa-1x fa-fw"></i>
+            </a>
+            <a class="hotlink mx-2" href="#">
+                <i class="icon-instagram fa-1x fa-fw"></i>
+            </a>
         </div>
-    </nav>
+        <div class="col lead align-self-center">
+            <h6 class="text-primary">
+                <a href="/pages?slug=contact">
+                    <i class="icon-envelope mr-2"></i>
+                </a>
+                <i class="icon-phone mr-2 "></i>
+                0177-9899100
+
+
+            </h6>
+
+        </div>
+    </div>
+</nav>
