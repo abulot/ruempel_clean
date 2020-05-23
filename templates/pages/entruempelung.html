@@ -1,0 +1,29 @@
+
+{% extends layout+".html" %}
+
+{% block content %}
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+        <div class="container p-0">
+            {% include "partials/header.html" %}
+            <div id="entruempelung" class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                     style="background-image: url('static/ruempel_clean/gallery/photo5310037608040082460.jpg');"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>Entrümpelungen aller Art</h2>
+                    <p class="lead mb-0">
+                        Ob Keller, Dachboden oder Abstellkammer: Irgendwo bewahren wir alle die Dinge auf, die wir
+                        eigentlich längst nicht mehr benötigen. Ob es sich um Gegenstände für den Sperrmüll oder
+                        originalverpackte Ware handelt, irgendwann wird es zu viel. Spätestens dann ist eine
+                        Entrümpelung unumgänglich. Wir sind Ihre Nummer 1 bei dem Entrümpeln Ihrer Räumlichkeiten und
+                        unterstützen Sie mit unserer schnellen und fachgerechten Arbeit. Wir entrümpeln zuverlässig und
+                        sorgfältig, stets mit Wertanrechnung Ihrer Habseligkeiten und fairen Konditionen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/testimonials.html" %}
+{% endblock %}

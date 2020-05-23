@@ -2,12 +2,16 @@ from app.controller.application_controller import ApplicationController
 
 
 class Router:
-    def process(self, request):
-        if(request.path == '/'):
+    @staticmethod
+    def process(request):
+        if request.path == '/':
             return ApplicationController(request).home()
-        elif(request.path == '/pages'):
+
+        elif request.path == '/pages':
             return ApplicationController(request).pages()
-        elif(request.path == '/contact_send'):
+
+        elif request.path == '/contact_send':
             return ApplicationController(request).contact_send()
+
         else:
             return ApplicationController(request).not_found()

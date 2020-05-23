@@ -4,8 +4,17 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
 }
 
 h1,
@@ -14,66 +23,92 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: green;
-  font-weight: 700;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000000;
+    font-weight: 900;
+    opacity: revert;
 }
 
-.logo{
-  height: 120px;
-  overflow: hidden;
+{
+    box-sizing: border-box
+;
 }
+
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.container img {
+    vertical-align: middle;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 97.2%;
+    padding: 20px;
+}
+
+.logo {
+    height: 120px;
+    overflow: hidden;
+}
+
 .showcase .showcase-text {
-  padding: 3rem;
+    padding: 3rem;
 }
 
 .showcase .showcase-img {
-  min-height: 30rem;
-  background-size: cover;
+    min-height: 30rem;
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
 }
 
 .features-icons {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .features-icons .features-icons-item {
-  max-width: 20rem;
+    max-width: 20rem;
 }
 
 .features-icons .features-icons-item .features-icons-icon {
-  height: 3rem;
+    height: 3rem;
 }
 
 .features-icons .features-icons-item .features-icons-icon i {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 .testimonials .testimonial-item {
-  max-width: 18rem;
+    max-width: 18rem;
 }
 
 .testimonials .testimonial-item img {
-  max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
-.hotlink{
+.hotlink {
     color: inherit;
 }
 
@@ -81,7 +116,8 @@ h6 {
     color: inherit;
     text-decoration: none;
 }
+
 footer.footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }

@@ -5,12 +5,14 @@ from app.models.contact_request import ContactRequest
 from app.models.mailer import Mailer
 from flask import current_app as app
 
+
 class ApplicationController:
 
     def __init__(self, request):
         self.params = request.args
         self.xdata = request.form
-        self.pages_set = ['test','contact', 'contact_confirm']
+        self.pages_set = ['home', 'entruempelung', 'haushaltsaufloesung', 'betriebsaufloesung', 'entkernung',
+                          'aussenbereich_entsorgung', 'about', 'test', 'contact', 'contact_confirm']
         self.layout = "base"
         self.mail = Mail(app)
 
@@ -19,7 +21,7 @@ class ApplicationController:
 
     def pages(self):
         page_slug = self.params['slug']
-        if self.__is_valid_page(page_slug) :
+        if self.__is_valid_page(page_slug):
             return render_template('pages/' + page_slug + '.html', layout=self.layout)
         else:
             return self.not_found()
