@@ -11,7 +11,8 @@ class ApplicationController:
     def __init__(self, request):
         self.params = request.args
         self.xdata = request.form
-        self.pages_set = ['home', 'entruempelung', 'haushaltsaufloesung', 'betriebsaufloesung', 'entkernung', 'about', 'test', 'contact', 'contact_confirm']
+        self.pages_set = ['home', 'entruempelung', 'haushaltsaufloesung', 'betriebsaufloesung', 'entkernung',
+                          'aussenbereich_entsorgung', 'about', 'test', 'contact', 'contact_confirm']
         self.layout = "base"
         self.mail = Mail(app)
 

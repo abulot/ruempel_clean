@@ -2,26 +2,31 @@
 
 {% block content %}
 
-    <div class="contact_page">
-        <form action="/pages?slug=contact_confirm" method="post">
-            <div class="form-group">
-                <label for="email">Email Adresse</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
 
-            <div class="form-group">
-                <label for="subject">Thema</label>
-                <input type="text" class="form-control" id="subject" required>
-            </div>
+    <div class="container contact_page">
+        {% include "partials/header.html" %}
+        <div class="jumbotron">
+            <h1 class="display-4">Kontaktieren Sie uns</h1>
+            <form action="/pages?slug=contact_confirm" method="post">
+                <div class="form-group">
+                    <label for="email">Email Adresse</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
 
-            <div class="form-group">
-                <label for="text">Ihre Nachricht</label>
-                <textarea class="form-control" id="text" ></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="subject">Thema</label>
+                    <input type="text" class="form-control" id="subject" required>
+                </div>
 
-            <input type="submit" class="btn btn-primary" value="Abschicken" name="send">
-        </form>
+                <div class="form-group">
+                    <label for="text">Ihre Nachricht</label>
+                    <textarea class="form-control" id="text"></textarea>
+                </div>
 
+                <input type="submit" class="btn btn-primary" value="Abschicken" name="send">
+            </form>
+
+        </div>
     </div>
 
 {% endblock %}
