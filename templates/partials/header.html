@@ -1,7 +1,66 @@
-<!-- Header -->
-<nav class="">
-    <div class="row text-center">
-        <div class="col text-primary">
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/pages?slug=home">
+        <img class="logo" src="/static/ruempel_clean/ruempelClean_logo.svg">
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link"
+                   href="/pages?slug=home">
+                    <h6>Startseite</h6>
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                   href="#"
+                   id="navbarDropdownMenuLink"
+                   data-toggle="dropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false">
+                    Dienstleistungen
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item"
+                       href="/pages?slug=haushaltsaufloesung">
+                        <h6>Haushaltsauflösung</h6>
+                    </a>
+                    <a class="dropdown-item"
+                       href="/pages?slug=betriebsaufloesung">
+                        <h6>Betriebsauflösung</h6>
+                    </a>
+                    <a class="dropdown-item"
+                       href="/pages?slug=entkernung">
+                        <h6>Abriss & Entkernung</h6>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="/pages?slug=contact">
+                    <h6>Kontakt</h6>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="/pages?slug=about">
+                    <h6>Über uns</h6>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-md-auto">
             {{ error }}
 
             <a class="hotlink mx-2" href="#">
@@ -13,18 +72,17 @@
             <a class="hotlink mx-2" href="#">
                 <i class="icon-instagram fa-1x fa-fw"></i>
             </a>
-        </div>
-        <div class="col lead align-self-center">
-            <h6 class="text-primary">
-                <a href="/pages?slug=contact">
-                    <i class="icon-envelope mr-2"></i>
-                </a>
-                <i class="icon-phone mr-2 "></i>
-                0177-9899100
+            <div class="col lead align-self-center">
+                <h6 class="text-primary">
+                    <a href="/pages?slug=contact">
+                        <i class="icon-envelope mr-2"></i>
+                    </a>
+                    <i class="icon-phone mr-2 "></i>
+                    0177-9899100
+                </h6>
+            </div>
+        </ul>
 
-
-            </h6>
-
-        </div>
     </div>
+
 </nav>

@@ -1,0 +1,14 @@
+.jumbotron_hero {
+    color: white;
+    background-image:   linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.9) 100%),
+                        url("/static/ruempel_clean/gallery/hero_bg_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav.navbar-nav.navbar-item li a {
+    color: black;
+    font-size: 20px;
+}

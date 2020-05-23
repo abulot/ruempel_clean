@@ -14,10 +14,12 @@ Bootstrap(app)
 fa = FontAwesome(app)
 mail = Mail(app)
 
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>', methods=['GET', 'POST'])
 def base(path):
     return Router().process(request)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
