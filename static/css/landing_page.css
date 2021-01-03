@@ -53,8 +53,13 @@ h6 {
     padding: 20px;
 }
 
+.navbar-extenssion {
+    height: 176px;
+}
+
 .logo {
-    height: 120px;
+    width: 250px;
+    height: 145px;
     overflow: hidden;
 }
 

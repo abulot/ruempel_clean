@@ -5,7 +5,6 @@ Jinja2
 MarkupSafe
 Werkzeug
 flask_bootstrap
-flask-fontawesome
 flask-nav
 flask-debug
 flask-wtf
@@ -13,3 +12,6 @@ pytest
 pytest-flask
 splinter[flask]
 flask-mail
+Flask-FontAwesome
+Flask-Assets
+pyScss

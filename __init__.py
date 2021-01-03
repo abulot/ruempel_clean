@@ -4,6 +4,7 @@ from flask_fontawesome import FontAwesome
 from flask_mail import Mail
 from app.config.router import Router
 
+
 import os
 
 flask_env = os.getenv('FLASK_ENV', 'development')
@@ -13,6 +14,7 @@ app.config.from_pyfile(f'app/config/environments/{flask_env}.cfg')
 Bootstrap(app)
 fa = FontAwesome(app)
 mail = Mail(app)
+
 
 
 @app.route('/', defaults={'path': ''})
